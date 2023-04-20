@@ -1,0 +1,11 @@
+pipeline {
+    agent any
+    
+    stages {
+        stage('Test') {
+            steps {
+                sh '/Users/dungngo.mac/KatalonRuntimeEngine/execute-katalon-tests.sh'
+            }
+        }
+    }
+}
